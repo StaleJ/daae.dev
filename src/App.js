@@ -1,23 +1,29 @@
 import React from 'react';
-import Courses from './Courses';
+import { BrowserRouter as Router, Route, Link } from "react-router-dom";
+
+import Courses from './courses/Courses';
+import Projects from './projects/Projects';
+import Home from './home/Home';
 import './App.css';
 
-const HeaderLink = props => <div className="header-link">{props.name}</div>
+const HeaderLink = props => <Link className="header-link" to={props.path}>{props.name}</Link>
 
 const Header = props =>
   <div className="header">
-    <HeaderLink name="Home"></HeaderLink>
-    <HeaderLink name="Projects"></HeaderLink>
-    <HeaderLink name="Courses"></HeaderLink>
-    <HeaderLink name="Blog"></HeaderLink>
+    <HeaderLink name="Home" path="/"></HeaderLink>
+    <HeaderLink name="Projects" path="/projects"></HeaderLink>
+    <HeaderLink name="Courses" path="courses"></HeaderLink>
+    <HeaderLink name="Blog" path="/blog"></HeaderLink>
   </div>
 
 function App() {
   return (
-    <div>
-      <Header></Header>
-      <Courses></Courses>
-    </div>
+      <Router>
+        <Header></Header>
+        <Route path="/" exact component={Home}></Route>
+        <Route path="/courses" component={Courses}></Route>
+        <Route path="/projects" component={Projects}></Route>
+      </Router>
   );
 }
 
