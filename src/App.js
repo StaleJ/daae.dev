@@ -1,24 +1,22 @@
 import React from 'react';
-import logo from './logo.svg';
+import Courses from './Courses';
 import './App.css';
+
+const HeaderLink = props => <div className="header-link">{props.name}</div>
+
+const Header = props =>
+  <div className="header">
+    <HeaderLink name="Home"></HeaderLink>
+    <HeaderLink name="Projects"></HeaderLink>
+    <HeaderLink name="Courses"></HeaderLink>
+    <HeaderLink name="Blog"></HeaderLink>
+  </div>
 
 function App() {
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+    <div>
+      <Header></Header>
+      <Courses></Courses>
     </div>
   );
 }
