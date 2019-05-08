@@ -1,19 +1,14 @@
-.projects-wrapper {
-    text-align: center;
+.project {
+    display: flex;
 }
 
-.projects {
-    display: inline-block;
+.project:hover .github {
+    background: orange;
+    border-color: orange;
 }
 
-.github-logo {
-    display: inline-block;
-    width: 50px;
-    height: 50px;
-    margin: 10px;
-}
-
-.github-logo:hover {
+.project:hover {
+    text-decoration: underline;
     cursor: pointer;
 }
 

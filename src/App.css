@@ -11,43 +11,61 @@
   color: black;
 }
 
-.header-link:hover {
-  text-decoration: underline;
-}
-
-.courses-wrapper {
-  text-align: center;
-}
-
-.courses {
-  display: inline-block;
-}
-
-.course {
-  text-align: left;
-  padding: 10px;
-  width: 400px;
-  margin-bottom: 5px;
-}
-
-.course-code {
-  font-weight: bold;
-  font-size: 25px;
-}
-
-.course-name {
-  font-style: italic;
-}
-
-.course-description {
-  font-size: 18px;
+.tags {
+  display: flex;
 }
 
 .tag {
   display: inline-block;
   padding: 5px;
   margin: 4px;
-  color: white;
   background-color: orange;
   font-weight: bold;
+}
+
+.wrapper {
+  text-align: center;
+}
+
+.content {
+  display: inline-block;
+}
+
+.github {
+  border: 5px solid transparent;
+  border-radius: 100%;
+  transition-property: background-color, border-color;
+  transition-duration: .3s, .3s;
+}
+
+.github:hover {
+  background: orange;
+  border-color: orange;
+  cursor: pointer;
+}
+
+.github-big {
+  width: 100px;
+  height: 100px;
+  margin: 20px;
+}
+
+.github-small {
+  display: inline-block;
+  width: 50px;
+  height: 50px;
+  margin: 10px;
+}
+
+.spinning {
+  animation: spin 4s infinite linear;
+}
+
+@keyframes spin {
+  0% { 
+    transform: rotate(0deg);
+  }
+  100% {
+    transform: rotate(360deg);
+  }	
 }
