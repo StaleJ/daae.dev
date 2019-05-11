@@ -3,8 +3,8 @@
 }
 
 .project:hover .github {
-    background: orange;
-    border-color: orange;
+    background: #00B2EE;
+    border-color: #00B2EE;
 }
 
 .project:hover {
