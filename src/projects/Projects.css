@@ -1,29 +1,48 @@
-.project {
-    display: flex;
+.projects {
+    margin-top: var(--padding-small);
+    text-align: center;
 }
 
-.project:hover .github {
-    background: #00B2EE;
-    border-color: #00B2EE;
+.projects .project:hover {
+    color: var(--faded-font-color);
+}
+
+.projects .project:hover img {
+    filter: blur(2px);
 }
 
 .project:hover {
-    text-decoration: underline;
+    color: var(--solid-font-color);
     cursor: pointer;
+    filter: none;
 }
 
-.project-props {
-    text-align: left;
+.projects .project:hover img {
+    filter: blur(0px);
+}
+
+.project {
     display: inline-block;
-    margin: 10px;
-    height: 50px;
+    width: var(--card-width);
+    padding: var(--padding-medium);
+    text-align: left;
 }
 
-.project-name {
-    font-weight: bold;
-    font-size: 25px;
+.project img {
+    width: var(--card-width);
 }
 
-.project-description {
-    font-style: italic;
+.project h2 {
+    text-transform: uppercase;
+    margin: 0;
+    padding-left: var(--padding-small);
+}
+
+.project p {
+    margin: 0;
+    padding-left: var(--padding-small);
+}
+
+.stars {
+    padding-bottom: var(--padding-small);
 }

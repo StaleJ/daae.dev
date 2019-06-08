@@ -1,14 +1,68 @@
+:root {
+  --solid-font-color: rgba(31,31,31,.77);
+  --main-background-color: #fff;
+  --faded-font-color: #BFB9B9;
+
+  --header-height: 100px;
+  --padding-small: 20px;
+  --padding-medium: 40px;
+  --padding-big: 100px;
+
+  --card-width: 300px;
+
+
+  background-color: var(--main-background-color);
+  color: var(--solid-font-color);
+}
+
+.top {
+  position: relative;
+  height: var(--header-height);
+}
+
+.name {
+  display: inline-block;
+  text-transform: uppercase;
+  font-weight: 900;
+  color: var(--faded-font-color);
+  font-size: 40px;
+
+  height: 100%;
+  line-height: var(--header-height);
+  padding-left: var(--padding-medium);
+}
+
 .header {
   text-align: center;
-  font-size: 25px;
+  font-size: 20px;
+  font-weight: 900;
+  float: right;
+  height: 100%;
+  line-height: var(--header-height);
+
+  padding-right: var(--padding-small);
+}
+
+.header:hover .header-link {
+  color: var(--faded-font-color);
 }
 
 .header-link {
   display: inline-block;
   cursor: pointer;
-  margin: 10px;
   text-decoration: none;
-  color: black;
+  text-transform: uppercase;
+  color: var(--solid-font-color);
+  transition: color .3s;
+
+  padding-left: var(--padding-small);
+  padding-right: var(--padding-small);
+
+}
+
+.header .header-link:hover {
+  color: var(--solid-font-color);
+  text-decoration: none;
 }
 
 .tags {

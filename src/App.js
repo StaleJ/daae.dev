@@ -9,16 +9,19 @@ import './App.css';
 
 function App() {
   return (
-      <Router>
+    <Router>
+      <div class="top">
+        <div className="name">Petter Daae</div>
         <div className="header">
           <Link className="header-link" to="/">Home</Link>
           <Link className="header-link" to="/projects">Projects</Link>
-          <Link className="header-link" to="/courses">Courses</Link>
+          <Link className="header-link" to="/courses">About</Link>
         </div>
-        <Route path="/" exact component={Home}></Route>
-        <Route path="/courses" component={Courses}></Route>
-        <Route path="/projects" component={Projects}></Route>
-      </Router>
+      </div>
+      <Route path="/" exact component={Home}></Route>
+      <Route path="/courses" component={Courses}></Route>
+      <Route path="/projects" component={Projects}></Route>
+    </Router>
   );
 }
 
