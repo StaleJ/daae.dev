@@ -3,29 +3,18 @@
     text-align: center;
 }
 
-.projects .project:hover {
-    color: var(--faded-font-color);
-}
-
-.projects .project:hover img {
-    filter: blur(2px);
-}
-
 .project:hover {
-    color: var(--solid-font-color);
     cursor: pointer;
-    filter: none;
-}
-
-.projects .project:hover img {
-    filter: blur(0px);
+    color: var(--solid-font-color);
 }
 
 .project {
     display: inline-block;
     width: var(--card-width);
-    padding: var(--padding-medium);
+    margin: var(--padding-medium);
+    color: var(--faded-font-color);
     text-align: left;
+    transition: var(--standard-transition-speed);
 }
 
 .project img {

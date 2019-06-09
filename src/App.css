@@ -7,9 +7,9 @@
   --padding-small: 20px;
   --padding-medium: 40px;
   --padding-big: 100px;
-
   --card-width: 300px;
 
+  --standard-transition-speed: .18s;
 
   background-color: var(--main-background-color);
   color: var(--solid-font-color);
@@ -23,28 +23,32 @@
 .name {
   display: inline-block;
   text-transform: uppercase;
-  font-weight: 900;
+  font-weight: bold;
   color: var(--faded-font-color);
   font-size: 40px;
-
   height: 100%;
   line-height: var(--header-height);
   padding-left: var(--padding-medium);
 }
 
 .header {
-  text-align: center;
   font-size: 20px;
-  font-weight: 900;
+  font-weight: bold;
   float: right;
   height: 100%;
   line-height: var(--header-height);
-
   padding-right: var(--padding-small);
 }
 
 .header:hover .header-link {
   color: var(--faded-font-color);
+  fill: var(--faded-font-color);
+}
+
+.svg-link {
+  fill: inherit;
+  transition: inherit;
+  transition: fill var(--standard-transition-speed);
 }
 
 .header-link {
@@ -53,74 +57,14 @@
   text-decoration: none;
   text-transform: uppercase;
   color: var(--solid-font-color);
-  transition: color .3s;
-
+  fill: var(--solid-font-color);
+  transition: color var(--standard-transition-speed);
   padding-left: var(--padding-small);
   padding-right: var(--padding-small);
-
 }
 
 .header .header-link:hover {
   color: var(--solid-font-color);
+  fill: var(--solid-font-color);
   text-decoration: none;
-}
-
-.tags {
-  display: flex;
-}
-
-.tag {
-  display: inline-block;
-  padding: 5px;
-  margin: 4px;
-  background-color: #00B2EE;
-  color: white;
-  font-weight: bold;
-}
-
-.wrapper {
-  text-align: center;
-}
-
-.content {
-  display: inline-block;
-}
-
-.github {
-  border: 5px solid transparent;
-  border-radius: 100%;
-  transition-property: background-color, border-color;
-  transition-duration: .3s, .3s;
-}
-
-.github:hover {
-  background: #00B2EE;
-  border-color: #00B2EE;
-  cursor: pointer;
-}
-
-.github-big {
-  width: 100px;
-  height: 100px;
-  margin: 20px;
-}
-
-.github-small {
-  display: inline-block;
-  width: 50px;
-  height: 50px;
-  margin: 10px;
-}
-
-.spinning {
-  animation: spin 4s infinite linear;
-}
-
-@keyframes spin {
-  0% { 
-    transform: rotate(0deg);
-  }
-  100% {
-    transform: rotate(360deg);
-  }	
 }

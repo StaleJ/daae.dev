@@ -1,3 +1,5 @@
 # petterdaae.com
-sjakkbilde: Photo by JESHOOTS.COM on Unsplash
-rubiksbilde: Photo by Olav Ahrens Røtne on Unsplash
+## Credits
+* Chessphoto by JESHOOTS.COM on Unsplash
+* Cubephoto by Olav Ahtrens Røtne on Unsplash
+* Canvasphoto by Sandie Clarke on Unsplash
