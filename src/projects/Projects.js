@@ -24,6 +24,18 @@ function Projects() {
         image="./canvas.jpg"
         githubPath="/jalgroy/canvascli">
       </Project>
+      <Project
+        title="Dino Runner"
+        subtitle="Inspired by the Google's offline mode"
+        image="./dino.jpg"
+        githubPath="/petterdaae/dino-runner">
+      </Project>
+      <Project
+        title="petterdaae.com"
+        subtitle="My personal website"
+        image="./web.jpg"
+        githubPath="/petterdaae/petterdaae.com">
+      </Project>
     </div>
   );
 }
