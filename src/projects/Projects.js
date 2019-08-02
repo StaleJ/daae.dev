@@ -49,7 +49,7 @@ class Project extends React.Component {
   render() {
     return (
       <div className="project" onClick={() => redirectToGithub(this.state.githubPath)}>
-        <img src={this.state.image}></img>
+        <img src={this.state.image} alt="Project Thumbnail"></img>
         <h2>{this.state.title}</h2>
         <p>{this.state.subtitle}</p>
         <p className="stars">&#9733; {this.state.stars}</p>
