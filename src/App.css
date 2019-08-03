@@ -5,6 +5,7 @@
 
   --header-height: 100px;
   --padding-small: 20px;
+  --padding-extra-small: 5px;
   --padding-medium: 40px;
   --padding-big: 100px;
   --card-width: 300px;
@@ -67,4 +68,23 @@
   color: var(--solid-font-color);
   fill: var(--solid-font-color);
   text-decoration: none;
+}
+
+@media only screen and (max-width: 800px) {
+  :root {
+  --header-height: 60px;
+  --padding-small: 10px;
+  --padding-medium: 20px;
+  --padding-big: 50px;
+  --card-width: 200px;
+  }
+
+  .name {
+    display: none;
+  }
+
+  .header {
+    float: none;
+    text-align: center;
+  }
 }

@@ -12,7 +12,7 @@ import './App.css';
 function App() {
   return (
     <Router>
-      <div class="top">
+      <div className="top">
         <div className="name">Petter Daae</div>
         <div className="header">
           <Link className="header-link" to="/">Home</Link>

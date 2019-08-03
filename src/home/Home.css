@@ -16,3 +16,7 @@ h1 {
 .email-link:visited {
    color: var(--solid-font-color); 
 }
+
+.wrapper {
+    margin: var(--padding-medium)
+}
