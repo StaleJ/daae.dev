@@ -1,5 +1,18 @@
-.commits {
+h1 {
     font-size: 50px;
     text-align: center;
-    padding: var(--padding-big);
+    padding-top: var(--padding-big);
+}
+
+.intro {
+    font-size: 30px;
+    text-align: center;
+}
+
+.email-link:link {
+   color: var(--solid-font-color); 
+}
+
+.email-link:visited {
+   color: var(--solid-font-color); 
 }
