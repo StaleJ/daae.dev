@@ -20,3 +20,13 @@ h1 {
 .wrapper {
     margin: var(--padding-medium)
 }
+
+@media only screen and (max-width: 800px) {
+    h1 {
+        font-size: 30px;
+    }
+
+    .intro {
+        font-size: 20px;
+    }
+}
