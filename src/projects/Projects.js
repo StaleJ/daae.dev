@@ -30,6 +30,13 @@ function Projects() {
         image="./web.jpg"
         githubPath="/petterdaae/petterdaae.com">
       </Project>
+      <Project
+        title="Compose"
+        subtitle="Work in progress"
+        image="./music.jpg"
+        githubPath="/petterdaae/composer">
+      </Project>
+
     </div>
   );
 }

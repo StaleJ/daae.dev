@@ -8,3 +8,4 @@ The source code for [petterdaae.com](https://www.petterdaae.com).
 * Cubephoto by Olav Ahtrens Røtne on Unsplash
 * Canvasphoto by Sandie Clarke on Unsplash
 * Webphoto by Marvin Meyer on Unsplash
+* Musicphoto by Cassi Stewart on Unsplash
