@@ -5,7 +5,7 @@ h1 {
 }
 
 .intro {
-    font-size: 30px;
+    font-size: 25px;
     text-align: center;
 }
 
@@ -18,7 +18,8 @@ h1 {
 }
 
 .wrapper {
-    margin: var(--padding-medium)
+    margin: var(--padding-medium);
+    text-align: center;
 }
 
 @media only screen and (max-width: 800px) {

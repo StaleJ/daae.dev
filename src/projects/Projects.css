@@ -35,3 +35,10 @@
 .stars {
     padding-bottom: var(--padding-small);
 }
+
+@media only screen and (min-width: 800px) {
+    .projects {
+        padding-left: var(--padding-big);
+        padding-right: var(--padding-big);
+    }
+}
