@@ -25,7 +25,7 @@ class Text extends React.Component {
     }
 
     componentDidMount() {
-        setInterval(() => {
+        setInterval(async () => {
             this.setState((state, props) => {
                 if (state.animationFinished) {
                     let next;
