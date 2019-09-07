@@ -30,6 +30,7 @@
 .project p {
     margin: 0;
     padding-left: var(--padding-small);
+    font-size: 16px;
 }
 
 .stars {

@@ -1,12 +1,9 @@
 h1 {
     font-size: 50px;
-    text-align: center;
-    padding-top: var(--padding-big);
 }
 
 .intro {
     font-size: 25px;
-    text-align: center;
 }
 
 .email-link:link {
@@ -19,7 +16,8 @@ h1 {
 
 .wrapper {
     margin: var(--padding-medium);
-    text-align: center;
+    padding-left: 25%;
+    padding-right: 25%;
 }
 
 @media only screen and (max-width: 800px) {
@@ -28,6 +26,11 @@ h1 {
     }
 
     .intro {
-        font-size: 20px;
+        font-size: 16px;
+    }
+
+    .wrapper {
+        padding-left: 5%;
+        padding-right: 5%;
     }
 }

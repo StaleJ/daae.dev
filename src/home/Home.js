@@ -5,13 +5,12 @@ import './Home.css';
 function Home() {
   return (
     <div className="wrapper">
-      <h1 className="commits">Hello 👋</h1>
-      <p className="intro">
-        I study computer technology in Bergen 🎓<br />
-        If you want to get in touch, you can send me an email: <br />
-        <a href="mailto: petter.daae@gmail.com" className="email-link">petter.daae@gmail.com</a>
-      </p>
+      <h1>&lt;me&gt;</h1>
+      <p className="intro">Yo, I'm Petter. I study Computer Technology at the University of Bergen. 
+      This semester, my subjects are concurrent programming, software security and machine learning.
+      I also work part-time as a junior developer in Sbanken and as a teaching assistant in an algorithms class.</p>
       <Text></Text>
+      <h1>&lt;/me&gt;</h1>
     </div>
   );
 }

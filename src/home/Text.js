@@ -4,7 +4,7 @@ import './Text.css';
 const words = [
     'Haskell 🥰',
     'jazz 🎺',
-    'running 🏃‍♂',
+    'running 🏃',
     'foosball 🏈',
     'React 🤘',
     'making things 🧰',
@@ -17,29 +17,42 @@ class Text extends React.Component {
         super();
         this.state = {
             currentIndex: 0,
-            currentText: words[0]
+            currentText: '|',
+            animationFinished: false,
+            direction: 1,
+            lingerCount: 0
         }
-
     }
 
     componentDidMount() {
         setInterval(() => {
             this.setState((state, props) => {
-                let next;
-                if (state.currentIndex >= words.length - 1) next = 0;
-                else next = state.currentIndex + 1;
-                return { currentIndex: next, currentText: words[next] };
+                if (state.animationFinished) {
+                    let next;
+                    if (state.currentIndex >= words.length - 1) next = 0;
+                    else next = state.currentIndex + 1;
+                    return { currentIndex: next, currentText: '', animationFinished: false, direction: 1, lingerCount: 0 };
+                } else {
+                    let currentWord = words[state.currentIndex];
+                    let maxSize = currentWord.length;
+                    let currentSize = state.currentText.length - 1;
+                    if (state.direction > 0) {
+                        if (currentSize === maxSize - 2) return { currentText: currentWord + '|' };
+                        if (currentSize === maxSize && state.lingerCount < 20) return { lingerCount: state.lingerCount + 1 };
+                        if (currentSize === maxSize) return { direction: -1 };
+                        return { currentText: currentWord.substring(0, currentSize + 1) + '|' };
+                    } else {
+                        if (currentSize === maxSize) return { currentText: currentWord.substring(0, maxSize - 3) + '|' }
+                        if (currentSize === 0) return { animationFinished: true };
+                        return { currentText: currentWord.substring(0, currentSize - 1) + '|' };
+                    }
+                }
             });
-        }, 1000);
-    }
-
-    nextWord(state) {
-        if (state.currentIndex >= words.length - 1) return 0;
-        return state.currentIndex + 1;
+        }, 50);
     }
 
     render() {
-        return <p>I like {this.state.currentText}</p>
+        return <p>In my spear time I enjoy {this.state.currentText}</p>
     }
 }
 
