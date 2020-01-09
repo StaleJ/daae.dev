@@ -3,7 +3,7 @@ import './Resume.css';
 import data from './data.js';
 import ImageComponent from 'react-rounded-image';
 import Image from './petter.jpg';
-import Text from '../home/Text';
+import Text from './Text';
 
 function Resume() {
   console.log(data);
