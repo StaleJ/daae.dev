@@ -1,5 +1,5 @@
 export default {
-    intro: "Hi! My name is Petter Daae. I am 21 years old and currently pursuing a bachelor in computer technology. This semester, I have two subjects: Cryptography and a project course. In the project course, we are developing an app for the norwegian red cross.",
+    intro: "Hi! My name is Petter Daae. I am 21 years old and currently pursuing a bachelor in computer technology. This semester, I have two subjects: cryptography and a project course. In the project course, we are developing an app for the norwegian red cross.",
     contact: "I you want to get in touch, you can send me an email at petter.daae@gmail.com.",
     work: [
         {
@@ -85,7 +85,7 @@ export default {
         },
         {
             title: "System Developer at Hatteland Computers",
-            description: "",
+            description: "I worked on an administrative tool that is mainly used by customer service. This included backend development (REST APIs, Windows Services, databases) and frontend development in angular.",
             time: "Summer 2018",
             tags: [
                 {
