@@ -41,7 +41,7 @@ p {
     font-size: 16px;
 }
 
-@media only screen and (max-width: 800px) {
+@media only screen and (max-width: 1200px) {
     h1 {
         font-size: 30px;
     }
@@ -49,5 +49,17 @@ p {
     .wrapper {
         padding-left: 5%;
         padding-right: 5%;
+    }
+
+    .animated-text {
+        display: none;
+        background: red;
+    }
+    
+    }
+
+@media only screen and (min-width: 1201px) {
+    .animated-text-replacement {
+        display: none;
     }
 }

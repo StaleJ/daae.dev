@@ -6,17 +6,20 @@ import Image from './petter.jpg';
 import Text from './Text';
 
 function Resume() {
-  console.log(data);
+  var pictureSize = window.matchMedia("(max-width: 800px)").matches ? "200" : "250";
   return (
     <div className="wrapper">
       <ImageComponent
         roundedSize="0"
         image={Image}
-        imageWidth="300"
-        imageHeight="300"
+        imageWidth={pictureSize}
+        imageHeight={pictureSize}
       ></ImageComponent>
       <p>{data.intro}</p>
-      <Text></Text>
+      <div className="animated-text">
+        <Text></Text>
+      </div>
+      <p className="animated-text-replacement">{data.freeTime}</p>
       <p>{data.contact}</p>
       <Divider></Divider>
       <h1>Work Experience</h1>

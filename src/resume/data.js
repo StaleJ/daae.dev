@@ -1,10 +1,11 @@
 export default {
-    intro: "Hi! My name is Petter Daae. I am 21 years old and currently pursuing a bachelor in computer technology. This semester, I have two subjects: cryptography and a project course. In the project course, we are developing an app for the norwegian red cross.",
-    contact: "I you want to get in touch, you can send me an email at petter.daae@gmail.com.",
+    intro: "Hello! My name is Petter Daae. I am 21 years old and currently pursuing a bachelor in computer technology. This semester I'm studying cryptography and mobile app design.",
+    freeTime: "In my free time I enjoy playing the guitar, hanging out with friends and exercising.",
+    contact: "I you want to get in touch, you can reach me at petter.daae@gmail.com.",
     work: [
         {
             title: "Junior Developer at Sbanken",
-            description: "My main focus here has been batch jobs. We have converted most of the batch jobs from .NET framework to .NET Core. The hardest part of this was to take code out of a mono-repository and making all the batches independent console applications. Another challenge we spent a lot of time on was to make all things integrate correctly with each other (Windows Services, REST APIs, Splunk, databases, ...). We also cleaned up a lot of old code, set up new logging routines and new build and deploy procedures. I have gotten a lot of experience from monitoring applications in production enviroments and fixing things that fails in production. Otherwise, I have done developing of new batch jobs and some web development in React.",
+            description: "My main focus here has been batch jobs. We have converted most of the batch jobs from .NET framework to .NET Core. We also cleaned up a lot of old code, set up new logging routines and new build and deploy procedures. I have gotten a lot of experience from monitoring applications in production enviroments and fixing things that fails in production. Otherwise, I have done developing of new batch jobs and some web development in React.",
             time: "January 2019 - now",
             tags: [
                 {
@@ -66,7 +67,7 @@ export default {
         },
         {
             title: "Teaching Assinstant in Introduction to Programming at UiB",
-            description: "I had group sessions every week where I helped students with assignments. I also corrected assignments and did one-to-one teaching with some students.",
+            description: "I had group sessions every week where I helped students with assignments. I also corrected assignments and did one-on-one teaching with some students.",
             time: "August 2018 - December 2018",
             tags: [
                 {
