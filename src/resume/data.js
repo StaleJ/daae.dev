@@ -184,6 +184,7 @@ export default {
         {
             title: "Guitarchords",
             description: "Commandline interface for generating voicings on the guitar",
+            github: "https://github.com/petterdaae/guitarchords",
             tags: [
                 {
                     text: "C#",
@@ -202,6 +203,7 @@ export default {
         {
             title: "Curryfish",
             description: "UCI chess engine",
+            github: "https://github.com/petterdaae/curryfish",
             tags: [
                 {
                     text: "Haskell",
@@ -216,6 +218,7 @@ export default {
         {
             title: "Rubikscube",
             description: "A rubik's-cube-proof-of-concept implemented with javascript and three.js",
+            github: "https://github.com/petterdaae/rubikscube",
             tags: [
                 {
                     text: "Javascript",
@@ -230,6 +233,7 @@ export default {
         {
             title: "petterdaae.com",
             description: "The source code for this webpage",
+            github: "https://github.com/petterdaae/petterdaae.com",
             tags: [
                 {
                     text: "React",

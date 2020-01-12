@@ -41,6 +41,15 @@ p {
     font-size: 16px;
 }
 
+.github {
+    color: var(--solid-font-color);
+    outline: none;
+}
+
+.github:active {
+    outline: none;
+}
+
 @media only screen and (max-width: 1200px) {
     h1 {
         font-size: 30px;

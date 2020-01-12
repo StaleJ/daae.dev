@@ -29,7 +29,7 @@ function Resume() {
       <Divider></Divider>
       <h1>Projects</h1>
       {data.projects.map(proj =>
-        <Block key={proj.title} title={proj.title} subtitle={proj.description} tags={proj.tags}></Block>
+        <Block key={proj.title} title={proj.title} subtitle={proj.description} tags={proj.tags} github={proj.github}></Block>
       )}
       <Divider></Divider>
       <h1>Education</h1>
@@ -40,7 +40,7 @@ function Resume() {
   );
 }
 
-function Block({ title, subtitle, description, tags }) {
+function Block({ title, subtitle, description, tags, github }) {
   return (
     <div className="block">
       <h2>{title}</h2>
@@ -49,6 +49,7 @@ function Block({ title, subtitle, description, tags }) {
       {tags && <div>
         {tags.map(tag => <Tag key={tag.text} text={tag.text} color={tag.color}></Tag>)}
       </div>}
+      {github && <a className="github" href={github}>Git Repository</a>}
     </div>
   );
 }
