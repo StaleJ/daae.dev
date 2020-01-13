@@ -1,7 +1,7 @@
 export default {
     intro: "Hello! My name is Petter Daae. I am 21 years old and currently pursuing a bachelor in computer technology. This semester I'm studying cryptography and mobile app design.",
     freeTime: "In my free time I enjoy playing the guitar, hanging out with friends and exercising.",
-    contact: "I you want to get in touch, you can reach me at petter.daae@gmail.com.",
+    contact: "If you want to get in touch, you can reach me at petter.daae@gmail.com.",
     work: [
         {
             title: "Junior Developer at Sbanken",
