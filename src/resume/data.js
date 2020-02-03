@@ -5,7 +5,7 @@ export default {
     work: [
         {
             title: "Junior Developer at Sbanken",
-            description: "My main focus here has been batch jobs. We have converted most of the batch jobs from .NET framework to .NET Core. We also cleaned up a lot of old code, set up new logging routines and new build and deploy procedures. I have gotten a lot of experience from monitoring applications in production enviroments and fixing things that fails in production. Otherwise, I have done developing of new batch jobs and some web development in React.",
+            description: "My main focus here has been batch jobs. We have converted most of the batch jobs from .NET framework to .NET Core. We also cleaned up a lot of old code, set up new logging routines and new build and deploy procedures. I have gotten a lot of experience from monitoring applications in production environments and fixing things that fails in production. Otherwise, I have done developing of new batch jobs and some web development in React.",
             time: "January 2019 - now",
             tags: [
                 {

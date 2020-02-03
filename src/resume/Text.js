@@ -1,10 +1,10 @@
 import React from 'react';
 
 const words = [
-    'playing the guitar 🎸',
-    'exercising 🏃',
-    'hanging out with friends 🍺',
-    'creating stuff 🧰',
+    'singing in the student choir BLAK 💙',
+    'running 🏃',
+    'hanging out with friends 👫',
+    'making things 🧰',
     'beef burgers 🍔',
 ]
 
