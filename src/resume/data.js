@@ -1,5 +1,5 @@
 export default {
-    intro: "Hello! My name is Petter Daae. I am 22 years old and currently pursuing a masters in Algorithms at UiB.",
+    intro: "Hello! My name is Petter Daae. I am 22 years old and currently pursuing a masters in algorithms at UiB.",
     freeTime: "In my free time I enjoy playing the guitar, hanging out with friends and exercising.",
     contact: "If you want to get in touch, you can reach me at petter.daae@gmail.com.",
     work: [
