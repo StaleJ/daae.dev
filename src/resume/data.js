@@ -32,6 +32,21 @@ export default {
         },
         {
             title: "Teaching Assistant in Algorithms at UiB",
+            description: "I have group sessions every week where I help students with assignments. I also correct assignments and participate in weekly meetings with the other teaching assistants.",
+            time: "August 2020 - now",
+            tags: [
+                {
+                    text: "Java",
+                    color: "orange"
+                },
+                {
+                    text: "Algorithms",
+                    color: "red"
+                }
+            ]
+        },
+        {
+            title: "Teaching Assistant in Algorithms at UiB",
             description: "I had group sessions every week where I helped students with assignments. I also corrected assignments and answered questions in a discussion forum.",
             time: "August 2019 - December 2019",
             tags: [
