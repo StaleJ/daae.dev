@@ -2,10 +2,17 @@ import React from 'react';
 import './Resume.css';
 import data from './data.js';
 import Text from './Text';
+import Confetti from 'react-confetti';
+import { useWindowSize } from '@react-hook/window-size';
 
 function Resume() {
+  const today = new Date();
+  const isBirthday = today.getMonth() === 4 && today.getDate() === 28;
+  const [width, height] = useWindowSize();
+  
   return (
     <div className="wrapper">
+      {isBirthday && <Confetti style={{position: "fixed"}} width={width} height={height} />}
       <p>{data.intro}</p>
       <div className="animated-text">
         <Text></Text>
