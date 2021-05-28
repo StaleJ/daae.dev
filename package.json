@@ -3,7 +3,9 @@
   "version": "0.1.0",
   "private": true,
   "dependencies": {
+    "@react-hook/window-size": "^3.0.7",
     "react": "^16.8.6",
+    "react-confetti": "^6.0.1",
     "react-dom": "^16.8.6",
     "react-rounded-image": "^2.0.2",
     "react-router-dom": "^5.0.0",
